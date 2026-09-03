@@ -1,7 +1,7 @@
 """
 =========================================================
 AI Resume Analyzer
-Author : Shan Ali
+Author : Yashfa waseem
 
 This Streamlit application allows users to:
 
