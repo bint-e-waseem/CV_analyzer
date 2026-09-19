@@ -22,6 +22,17 @@ Functional logic (parsing, scoring, matching) is unchanged.
 # =========================================================
 import nltk
 
+# Cache NLTK downloads so they run ONLY ONCE on server startup
+@st.cache_resource
+def setup_nltk():
+    for pkg in ['punkt', 'stopwords', 'wordnet', 'punkt_tab']:
+        try:
+            nltk.data.find(f'tokenizers/{pkg}' if 'punkt' in pkg else f'corpora/{pkg}')
+        except LookupError:
+            nltk.download(pkg, quiet=True)
+
+
+setup_nltk()
 try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
