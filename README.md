@@ -7,7 +7,7 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.47.1-FF4B4B.svg)](https://streamlit.io/)
 [![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange.svg)](https://scikit-learn.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://cvanalyzergit-9lniixytcwmajnvsbg3e3f.streamlit.app)
 **AI Resume Analyzer Pro** is a sophisticated, client-ready application that leverages Machine Learning to evaluate resumes against job descriptions. It provides an accurate ATS (Applicant Tracking System) match score, identifies skill gaps, and delivers actionable recommendations to optimize your resume for specific roles.
 
 ## ✨ Key Features
