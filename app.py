@@ -20,7 +20,22 @@ Functional logic (parsing, scoring, matching) is unchanged.
 # =========================================================
 # Import Libraries
 # =========================================================
+import nltk
 
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
+
+try:
+    nltk.data.find('corpora/stopwords')
+except LookupError:
+    nltk.download('stopwords')
+
+try:
+    nltk.data.find('corpora/wordnet')
+except LookupError:
+    nltk.download('wordnet')
 import streamlit as st
 
 from utils.parser import extract_text
