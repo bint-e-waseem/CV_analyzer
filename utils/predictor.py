@@ -35,7 +35,17 @@ from utils.preprocessing import clean_text
 
 import os
 import joblib
+import streamlit as st
 
+
+@st.cache_resource
+def load_model():
+    try:
+        model = joblib.load('models/model.pkl')  # Path according to your repo
+        return model
+    except Exception as e:
+        print(f"Model load notice: {e}")
+        return None
 # Get project root directory
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
